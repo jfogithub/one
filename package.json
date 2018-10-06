@@ -4,7 +4,7 @@
   "description": "As basic as can be",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server/index.js",
+    "start": "babel-node  src/server/index.js",
     "sass": "node-sass ./src/client/styles/index.scss ./src/client/styles/css/index.css"
   },
   "repository": {
@@ -14,7 +14,12 @@
   "author": "jfo",
   "homepage": "https://github.com/jfogithub/one#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "node-sass": "^4.9.3"
   }
 }

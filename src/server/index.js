@@ -1,8 +1,8 @@
-const express = require('express')
-var path = require('path')
+import express from 'express'
+import path from 'path'
 
-var config = require('./config')
-var homeRoute = require('./homeRoute')
+import { config } from './config'
+import { homeRoute } from './homeRoute'
 
 const {port, basepath, packagefolder, imagefolder} = config
 

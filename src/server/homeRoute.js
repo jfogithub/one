@@ -1,15 +1,13 @@
-var express = require('express')
-var path = require('path')
+import express from 'express'
+import path from 'path'
 
-var config = require('./config')
+import { config } from './config'
 
 const {basepath, packagefolder, clientfolder} = config
 
-var router = express.Router()
+const router = express.Router()
 
-router.use(`${basepath}`, express.static(path.join(`${packagefolder}`, `${clientfolder}`)))
-
-module.exports = router
+export const homeRoute = router.use(`${basepath}`, express.static(path.join(`${packagefolder}`, `${clientfolder}`)))
 
 
 
