@@ -11,5 +11,8 @@
     "url": "git+https://github.com/jfogithub/one.git"
   },
   "author": "jfo",
-  "homepage": "https://github.com/jfogithub/one#readme"
+  "homepage": "https://github.com/jfogithub/one#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
