@@ -4,7 +4,8 @@
   "description": "As basic as can be",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server/index.js"
+    "start": "node src/server/index.js",
+    "sass": "node-sass ./src/client/styles/index.scss ./src/client/styles/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   "author": "jfo",
   "homepage": "https://github.com/jfogithub/one#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "node-sass": "^4.9.3"
   }
 }
