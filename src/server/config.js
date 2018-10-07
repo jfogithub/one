@@ -1,7 +1,7 @@
 const config = {
   port: 10000,
   basepath: '/',
-  packagefolder: 'src',
+  packagefolder: 'dist',
   clientfolder: 'client',
   imagefolder: 'images',
 };
