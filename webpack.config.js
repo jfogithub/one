@@ -1,5 +1,5 @@
 const path = require('path');
-// const nodeExternals = require('webpack-node-externals');
+const nodeExternals = require('webpack-node-externals');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -11,7 +11,7 @@ module.exports = [{
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist/server'),
   },
-  // externals: [nodeExternals()],
+  externals: [nodeExternals()],
 },
 {
   mode: 'production',
@@ -21,11 +21,11 @@ module.exports = [{
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'One',
-      filename: './dist/client/index.html',
+      filename: 'index.html',
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist/client'),
   },
   module: {
